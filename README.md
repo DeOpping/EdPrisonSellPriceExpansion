@@ -21,3 +21,6 @@ This expansion adds two placeholders:
 - <code>%edsellprice_(currency)_(material)_int%</code>
 <br>Returns the price as an int only if it's a whole number
 <br>Example: <code>%edsellprice_tokens_stone_int%</code> returns 5
+## License
+EdPrisonSellPriceExpansion is licensed under [GNU GPLv3](https://www.gnu.org/licenses/).<br>
+View [`LICENSE.txt`](/LICENSE.txt) for more information.
