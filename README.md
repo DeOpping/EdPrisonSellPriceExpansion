@@ -13,3 +13,6 @@ You may download the latest version of this expansion on the [releases](https://
 ## Dependencies
 - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) <code>2.11.6</code>
 - [EdPrison](https://builtbybit.com/resources/edprison-core.24738/) <code>v5.6-HF-6</code>
+## Placeholders
+The placeholder for this expansion is: <code>%edprison_sellprice_(currency)_(material)%</code>
+<br>Example: <code>%edprison_sellprice_money_stone%</code>
