@@ -14,5 +14,10 @@ You may download the latest version of this expansion on the [releases](https://
 - [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) <code>2.11.6</code>
 - [EdPrison](https://builtbybit.com/resources/edprison-core.24738/) <code>v5.6-HF-6</code>
 ## Placeholders
-The placeholder for this expansion is: <code>%edsellprice_(currency)_(material)%</code>
-<br>Example: <code>%edsellprice_tokens_stone%</code>
+This expansion adds two placeholders:
+- <code>%edsellprice_(currency)_(material)%</code>
+<br>Returns the sell price of the material for the specific currency
+<br>Example: <code>%edsellprice_tokens_stone%</code> returns 5.0
+- <code>%edsellprice_(currency)_(material)_int%</code>
+<br>Returns the price as an int only if it's a whole number
+<br>Example: <code>%edsellprice_tokens_stone_int%</code> returns 5
