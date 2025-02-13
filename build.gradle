@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.fabled'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        content {
+            includeGroup 'org.bukkit'
+            includeGroup 'org.spigotmc'
+        }
+    }
+    maven { url = 'https://repo.extendedclip.com/releases/' }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    compileOnly 'org.spigotmc:spigot-api:1.8-R0.1-SNAPSHOT'
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+
+    // Put the EdPrison jar file in <yourProjectDirectory>/libs
+    compileOnly files('libs/EdPrison-5.6-HF-6.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
