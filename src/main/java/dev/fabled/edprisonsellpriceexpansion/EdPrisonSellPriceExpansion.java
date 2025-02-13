@@ -18,7 +18,7 @@ public class EdPrisonSellPriceExpansion extends PlaceholderExpansion {
 
     @Override
     public @NotNull String getIdentifier() {
-        return "edprison_sellprice";
+        return "edsellprice";
     }
 
     @Override
@@ -60,7 +60,7 @@ public class EdPrisonSellPriceExpansion extends PlaceholderExpansion {
         }
 
         final Material material;
-        try { material = Material.valueOf(split[1]); }
+        try { material = Material.valueOf(split[1].toUpperCase()); }
         catch (IllegalArgumentException e) {
             return null;
         }
