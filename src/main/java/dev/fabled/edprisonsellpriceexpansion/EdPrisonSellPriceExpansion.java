@@ -70,7 +70,13 @@ public class EdPrisonSellPriceExpansion extends PlaceholderExpansion {
             return null;
         }
 
-        return String.valueOf(materialCurrencies.get(split[0]));
+        final String value = String.valueOf(materialCurrencies.get(split[0]));
+
+        if (split.length == 3 && split[2].equalsIgnoreCase("int") && value.endsWith(".0")) {
+            return value.substring(0, value.length() - 2);
+        }
+
+        return value;
     }
 
 }
