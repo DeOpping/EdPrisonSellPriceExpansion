@@ -23,4 +23,4 @@ This expansion adds two placeholders:
 <br>Example: <code>%edsellprice_tokens_stone_int%</code> returns 5
 ## License
 EdPrisonSellPriceExpansion is licensed under [GNU GPLv3](https://www.gnu.org/licenses/).<br>
-View [`LICENSE.txt`](/LICENSE.txt) for more information.
+View [`LICENSE`](/LICENSE) for more information.
