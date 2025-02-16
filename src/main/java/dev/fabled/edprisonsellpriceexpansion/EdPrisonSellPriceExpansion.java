@@ -50,11 +50,11 @@ public class EdPrisonSellPriceExpansion extends PlaceholderExpansion {
 
     @Override
     public @Nullable String onRequest(final @NotNull OfflinePlayer player, final @NotNull String params) {
-        if (!params.contains("_")) {
+        if (!params.contains(":")) {
             return null;
         }
 
-        final String[] split = params.split("_");
+        final String[] split = params.split(":");
         if (split.length < 2) {
             return null;
         }
