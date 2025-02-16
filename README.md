@@ -15,10 +15,10 @@ You may download the latest version of this expansion on the [releases](https://
 - [EdPrison](https://builtbybit.com/resources/edprison-core.24738/) <code>v5.6-HF-6</code>
 ## Placeholders
 This expansion adds two placeholders:
-- <code>%edsellprice_(currency)_(material)%</code>
+- <code>%edsellprice_(currency>:(material)%</code>
 <br>Returns the sell price of the material for the specific currency
 <br>Example: <code>%edsellprice_tokens_stone%</code> returns 5.0
-- <code>%edsellprice_(currency)_(material)_int%</code>
+- <code>%edsellprice_(currency):(material):int%</code>
 <br>Returns the price as an int only if it's a whole number
 <br>Example: <code>%edsellprice_tokens_stone_int%</code> returns 5
 ## License
