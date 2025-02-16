@@ -66,11 +66,7 @@ public class EdPrisonSellPriceExpansion extends PlaceholderExpansion {
         }
 
         final Map<String, Double> materialCurrencies = autosellApi.getMaterialCurrencies(material, player.getUniqueId());
-        if (!materialCurrencies.containsKey(split[0])) {
-            return null;
-        }
-
-        final String value = String.valueOf(materialCurrencies.get(split[0]));
+        final String value = String.valueOf(materialCurrencies.getOrDefault(split[0], 0.0d));
 
         if (split.length == 3 && split[2].equalsIgnoreCase("int") && value.endsWith(".0")) {
             return value.substring(0, value.length() - 2);
